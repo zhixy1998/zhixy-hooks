@@ -15,15 +15,14 @@ jobs:
       - name: Lock npm version
         uses: actions/setup-node@v3
         with:
-          node-version: 18.12.1
+          node-version: 16.18.0
 
       - name: Install and Build
         run: |
-          npm i -g pnpm
-          pnpm install
-          pnpm run build:doc
+          npm install
+          npm run build:doc
         env:
-          NODE_OPTIONS: '--max_old_space_size=4096'
+          NODE_OPTIONS: "--max_old_space_size=4096"
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.3
