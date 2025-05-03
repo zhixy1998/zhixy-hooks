@@ -1,0 +1,6 @@
+{
+  // 配置预设，使用@babel/env和@babel/react
+  "presets": [["@babel/env"], "@babel/react"],
+  // 配置插件，使用@babel/plugin-transform-runtime
+  "plugins": ["@babel/plugin-transform-runtime"]
+}
