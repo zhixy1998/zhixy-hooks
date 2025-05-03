@@ -40,7 +40,7 @@ export default {
   alias: {
     encodeHooks: process.cwd() + "/packages/hooks/src/index.ts",
   },
-  publicPath: "/public/",
+  publicPath: "/zhixy-hooks/dist/",
   // 解析
   resolve: {
     includes: ["docs", "packages/hooks/src"],
